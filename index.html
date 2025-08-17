@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aesthetic Digital Clock</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <div class="glass">
+      <header class="topbar" aria-label="Clock controls">
+        <div class="brand">
+          <span class="dot"></span>
+          <span class="logo">Now<span class="thin">Time</span></span>
+        </div>
+
+        <div class="controls">
+          <label class="switch" title="Toggle 24-hour time">
+            <input id="toggle-24h" type="checkbox" />
+            <span class="slider"></span>
+            <span class="label">24h</span>
+          </label>
+
+          <div class="select" title="Theme">
+            <select id="theme-select" aria-label="Theme">
+              <option value="auto">Auto</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <section class="clock" aria-live="polite" aria-atomic="true">
+        <div class="ring">
+          <div class="ring__glow"></div>
+          <div class="ring__core">
+            <div id="time" class="time">00:00:00</div>
+            <div id="ampm" class="ampm" aria-hidden="true"></div>
+            <div id="date" class="date">—</div>
+            <div id="tz" class="tz">—</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span id="day-progress" class="progress">0% of today</span>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
