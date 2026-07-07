@@ -21,7 +21,7 @@ A minimal and modern digital clock built using **HTML, CSS, and JavaScript**. Th
 
 ### 🏠 Digital Clock
 
-![Digital Clock](images/clock.png)
+![Digital Clock](images/ui.png)
 
 ---
 
